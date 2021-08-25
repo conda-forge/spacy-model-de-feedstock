@@ -44,7 +44,7 @@ about:
   home: https://spacy.io
   license: CC BY-SA 3.0
   summary: 'German multi-task CNN trained on the TIGER and WikiNER corpus.'
-
+  license_file: LICENSE
   doc_url: https://spacy.io/models/de
 
 extra:
