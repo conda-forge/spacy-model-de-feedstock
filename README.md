@@ -3,7 +3,7 @@ About spacy-model-de
 
 Home: https://spacy.io
 
-Package license: CC BY-SA 3.0
+Package license: CC-BY-SA-3.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spacy-model-de-feedstock/blob/master/LICENSE.txt)
 
