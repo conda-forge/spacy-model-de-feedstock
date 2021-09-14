@@ -49,6 +49,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - sodre
-    - JennaLipscomb
     - mxr-conda
+    - JennaLipscomb
+    - sodre
