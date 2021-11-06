@@ -1,7 +1,7 @@
 {% set prefix = "spacy-model-" %}
 {% set lang = "de" %}
 {% set name = lang + "_core_news" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ prefix }}{{ lang|lower }}
@@ -10,7 +10,7 @@ package:
 source:
   - folder: sm
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_sm-{{ version }}/{{ name }}_sm-{{ version }}.tar.gz
-    sha256: fbc37695977556240208ad4416c8c1a3f0d674805c26e3f9fe3cf4b23dc40269
+    sha256: 68768c1ed9860cc918444c0626eb294318f01e7b902911eedbcf4da342dea5d9
 
 build:
   noarch: python
@@ -43,7 +43,7 @@ outputs:
 about:
   home: https://spacy.io
   license: CC-BY-SA-3.0
-  summary: 'German multi-task CNN trained on the TIGER and WikiNER corpus.'
+  summary: German multi-task CNN trained on the TIGER and WikiNER corpus.
   license_file: LICENSE
   doc_url: https://spacy.io/models/de
 
