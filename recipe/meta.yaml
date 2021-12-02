@@ -2,7 +2,7 @@
 {% set lang = "de" %}
 {% set name = lang + "_core_news" %}
 {% set name_trf = lang + "_dep_news" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ prefix }}{{ lang|lower }}
@@ -11,16 +11,16 @@ package:
 source:
   - folder: sm
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_sm-{{ version }}/{{ name }}_sm-{{ version }}.tar.gz
-    sha256: fbc37695977556240208ad4416c8c1a3f0d674805c26e3f9fe3cf4b23dc40269
+    sha256: 68768c1ed9860cc918444c0626eb294318f01e7b902911eedbcf4da342dea5d9
   - folder: lg
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_lg-{{ version }}/{{ name }}_lg-{{ version }}.tar.gz
-    sha256: 74c9f78c551919ec097f3bb43f7647eff0dd335e4dc91a32441e14005aea1e0e
+    sha256: 1d0252b925840e6c5548f16cf007fb25967e0bc720598b0c40d20c34f1cc38c5
   - folder: md
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_md-{{ version }}/{{ name }}_md-{{ version }}.tar.gz
-    sha256: 1650cb597b32e546187a82f1c1a4042d737e89cd5b38134bce701346e52252d8
+    sha256: 55f10bcf91f7ee807cc167cf564e3181abdd5a3ddde9a669f24c446795b7c1a0
   - folder: trf
     url: https://github.com/explosion/spacy-models/releases/download/{{ name_trf }}_trf-{{ version }}/{{ name_trf }}_trf-{{ version }}.tar.gz
-    sha256: 935396369f394b1aac0f6313969c8e193365406c59c4c788bd352af3ffee4973
+    sha256: 6b8e4fb21547fc2ba64103c0c54dfac2e41cb36534eda6fd056a8fb8c2ba7003
 
 build:
   noarch: python
@@ -53,7 +53,7 @@ outputs:
 about:
   home: https://spacy.io
   license: CC-BY-SA-3.0
-  summary: 'German multi-task CNN trained on the TIGER and WikiNER corpus.'
+  summary: German multi-task CNN trained on the TIGER and WikiNER corpus.
   license_file: LICENSE
   doc_url: https://spacy.io/models/de
 
